@@ -2,9 +2,9 @@
 
 This is a Node script that downloads fundraising data for the 2020 presidential candidates, compiles it into a csv, and uploads the csv to our FTP server. To run this script on your machine:
 
-##DO ONCE:
+## DO ONCE:
 
-### Prep the script
+#### Prep the script
 
 Clone the repository onto your machine:
 
@@ -14,7 +14,7 @@ Then install the necessary node packages. Navigate into your directory (if you'r
 
 `npm i`
 
-### Configure environment variables
+#### Configure environment variables
 
 The script needs three environment variables set in order to run, your FTP host name, FTP user name and FTP password. To set each of these, run the following commands, WITHOUT the brackets:
 
@@ -22,7 +22,7 @@ The script needs three environment variables set in order to run, your FTP host 
 `export FTPUSER={your username}`
 `export FTPPASS={your password}`
 
-### DO EVERY TIME:
+## DO EVERY TIME:
 
 Run the script!
 
