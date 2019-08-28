@@ -19,7 +19,9 @@ Then install the necessary node packages. Navigate into your directory (if you'r
 The script needs three environment variables set in order to run, your FTP host name, FTP user name and FTP password. To set each of these, run the following commands, WITHOUT the brackets:
 
 `export FTPHOST={hostname}`
+
 `export FTPUSER={your username}`
+
 `export FTPPASS={your password}`
 
 ## DO EVERY TIME:
