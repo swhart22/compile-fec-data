@@ -1,0 +1,24 @@
+{
+  "name": "compile-fec-data",
+  "version": "1.0.0",
+  "description": "This is a Node script that downloads fundraising data for the 2020 presidential candidates, compiles it into a csv, and uploads the csv to our FTP server. To run this script on your machine:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swhart22/compile-fec-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swhart22/compile-fec-data/issues"
+  },
+  "homepage": "https://github.com/swhart22/compile-fec-data#readme",
+  "dependencies": {
+    "d3-dsv": "^1.1.1",
+    "ftp-deploy": "^2.3.3",
+    "request": "^2.88.0"
+  }
+}
