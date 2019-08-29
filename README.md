@@ -32,7 +32,7 @@ Run the script!
 
 The resulting csv will be uploaded to `/html/national/2019/fec-campaign-data/data/`
 
-### STYLE TWEAKS (NAMES, CANDIDACY STATUS)
+## STYLE TWEAKS (NAMES, CANDIDACY STATUS)
 
 #### Change the style of a name
 
