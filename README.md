@@ -6,11 +6,13 @@ This is a Node script that downloads fundraising data for the 2020 presidential 
 
 #### Prep the script
 
+Open up your terminal and run these commands.
+
 Clone the repository onto your machine:
 
 `git clone https://github.com/swhart22/compile-fec-data.git`
 
-Then install the necessary node packages. Navigate into your directory (if you're not already in it) and:
+Then install the necessary node packages by navigating into your project's directory (if you're not already in it) and running:
 
 `npm i`
 
@@ -18,11 +20,11 @@ Then install the necessary node packages. Navigate into your directory (if you'r
 
 The script needs three environment variables set in order to run, your FTP host name, FTP user name and FTP password. To set each of these, run the following commands:
 
-`export FTPHOST=_hostname_`
+`export FTPHOST=hostname`
 
-`export FTPUSER=_your username_`
+`export FTPUSER=your username`
 
-`export FTPPASS=_your password_`
+`export FTPPASS=your password`
 
 ## DO EVERY TIME:
 
