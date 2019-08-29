@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/swhart22/compile-fec-data#readme",
   "dependencies": {
+    "csvtojson": "^2.0.10",
     "d3-dsv": "^1.1.1",
     "ftp-deploy": "^2.3.3",
     "request": "^2.88.0"
