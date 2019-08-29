@@ -82,6 +82,7 @@ async function handler (){
   } // requests presidential candidate data
   async function parseData (data) {
     let nameSwap = await csv().fromFile('./intermediate/name-check.csv')
+    let dropOuts = await csv().fromFile('./intermediate/dropped-out.csv')
 
     let parsedData = data.map(d => {
       let o = {}
@@ -94,15 +95,30 @@ async function handler (){
     })
 
     nameSwap.map(n => {
-      let changed = false
+      let changedName = false
       parsedData.forEach(p => {
         if (p['Candidate'] === n['INPUT NAME']){
           p['Candidate'] = n['DESIRED STYLED NAME']
-          changed = true
+          changedName = true
         }
       })
-      if (!changed){
-        console.log(`${n['INPUT NAME']} not found in data. Try this one again.`)
+      if (!changedName){
+        console.log(`${n['INPUT NAME']} not found in data but was in your list of names to change. Try this one again.`)
+      }
+    })
+
+    dropOuts.map(d => {
+      let droppedOut = false
+      parsedData.forEach(p => {
+        if (p['Candidate'] === d['Dropped Out']){
+          if (p['candidate_status'] !== 'P'){
+            p['candidate_status'] = 'P'
+          }
+          droppedOut = true
+        }
+      })
+      if (!droppedOut){
+        console.log(`${n['INPUT NAME']} not found in data but was in your list of names of candidates who dropped out. Try this one again.`)
       }
     })
     return parsedData
