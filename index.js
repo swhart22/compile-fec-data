@@ -82,7 +82,6 @@ async function handler (){
   } // requests presidential candidate data
   async function parseData (data) {
     let nameSwap = await csv().fromFile('./intermediate/name-check.csv')
-    console.log(nameSwap)
 
     let parsedData = data.map(d => {
       let o = {}
