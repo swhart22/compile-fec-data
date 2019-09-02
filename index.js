@@ -70,7 +70,7 @@ async function handler (){
     } // makes a request for a specific page of data, resolves as parsed JSON
 
     let pageOne = await onePage(1) 
-    pageOne['results'].map(d => candidates.push(d)) // requests the first page and push to array
+    pageOne['results'].map(d => candidates.push(d)) // requests the first page and pushes to array
 
     let pages = pageOne['pagination']['pages']
 
